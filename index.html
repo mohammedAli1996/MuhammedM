@@ -15,9 +15,41 @@
 	<link rel="stylesheet" href="assets/css/bootstrap-grid.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+
+	<style>
+		.whatsapp-float {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 20px;
+			right: 20px;
+			background-color: #25d366;
+			/* WhatsApp green color */
+			border-radius: 50%;
+			text-align: center;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			z-index: 9999;
+		}
+
+		.whatsapp-float img {
+			width: 40px;
+			margin-top: 9px;
+			/* Adjust the margin to center the icon vertically */
+		}
+
+		/* Add a hover effect (optional) */
+		.whatsapp-float:hover {
+			background-color: #128c7e;
+			/* Darker green color on hover */
+		}
+	</style>
+
 </head>
 
 <body id="home">
+	<a href="#" class="whatsapp-float" target="_blank">
+		<img src="assets/img/whatsapp.png" alt="WhatsApp">
+	</a>
 	<!--================ PRELOADER ================-->
 	<div class="preloader-cover">
 		<div id="cube-loader">
@@ -401,9 +433,9 @@
 	<!-- ================ FOOTER END ================ -->
 
 	<!--=================== TO TOP ===================-->
-	<a class="to-top" href="">
+	<!-- <a class="to-top" href="">
 		<i class="fa fa-whatsapp" aria-hidden="true"></i>
-	</a>
+	</a> -->
 	<!--================= TO TOP END =================-->
 
 	<!--=================== SCRIPT	===================-->
